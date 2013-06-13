@@ -66,7 +66,7 @@ class ClosureLintListener(sublime_plugin.EventListener):
             if region:
               regions.append(region)
 
-        view.add_regions('ClosureLintWarnings', regions, 'string', 'dot', sublime.DRAW_OUTLINED)
+        view.add_regions('ClosureLintWarnings', regions, 'string', 'dot', sublime.HIDDEN)
 
 
   def on_selection_modified(self, view):
